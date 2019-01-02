@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "declarationDir": "./generators/app",
+    "declaration": true,
+    "sourceRoot": "./app",
+    "outDir": "./generators/app",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "target": "es2018",
+    "lib": [
+      "es2018"
+    ],
+  },
+}

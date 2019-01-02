@@ -1,0 +1,27 @@
+{
+    "name": "generator-ts",
+    "version": "0.1.0",
+    "description": "a library typescript module",
+    "files": [
+        "generators"
+    ],
+    "main": "generators/index.js",
+    "keywords": [
+        "typescript",
+        "yeoman-generator"
+    ],
+    "dependencies": {
+        "yeoman-generator": "^3.2.0",
+        "yosay": "^2.0.2"
+    },
+    "devDependencies": {
+        "@types/chalk": "^2.2.0",
+        "@types/lodash": "^4.14.119",
+        "@types/node": "^10.12.18",
+        "@types/yeoman-generator": "^3.0.1",
+        "@types/yosay": "0.0.29",
+        "lodash": "^4.17.11",
+        "tslint": "^5.12.0",
+        "typescript": "^3.2.2"
+    }
+}

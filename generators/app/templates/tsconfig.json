@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "declarationDir": "./out",
+    "declaration": true,
+    "sourceRoot": "./code",
+    "inlineSourceMap": true,
+    "outDir": "./out",
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "strict": true,
+    "module": "commonjs",
+    "target": "es2018",
+    "lib": [
+      "es2018"
+    ],
+    "types": [
+      "jest",
+      "node"
+    ]
+  }
+}

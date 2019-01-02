@@ -1,0 +1,7 @@
+
+
+export class <%= pascalname %> {
+  constructor() {
+    console.log('I am constructable!');
+  }
+};

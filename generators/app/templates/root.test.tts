@@ -1,0 +1,11 @@
+import {<%= pascalname %>} from '../src/<%= kebabname %>';
+
+/**
+ * @jest-environment node
+ */
+
+describe('The library can be tested!', () => {
+  it('shall function!', () => {
+    new <%= pascalname %>();
+  });
+});
