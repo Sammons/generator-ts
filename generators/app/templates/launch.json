@@ -18,7 +18,9 @@
       },
       "args": [
         "${workspaceRoot}/node_modules/.bin/jest",
-        "--runInBand"
+        "--runInBand",
+        "--preset",
+        "ts-jest"
       ]
     }
   ]
