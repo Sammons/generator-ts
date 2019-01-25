@@ -5,22 +5,30 @@
   "main": "built/src/<%= kebabname %>.js",
   "license": "MIT",
   "scripts": {
-    "test": "npm-run-all build jest",
+    "build": "tsc -p .",
+    "clean": "rm -rf built",
+    "test": "npm-run-all build jest badges",
     "jest": "jest",
-    "coverage": "nyc",
-    "build": "tsc -p ."
+    "badges": "jest-coverage-badges",
+    "travis": "npm-run-all build jest"
   },
   "keywords": [
     "typescript"
   ],
   "jest": {
-    "verbose": true
+    "collectCoverage": true,
+    "coverageReporters": [
+      "json-summary"
+    ],
+    "verbose": true,
+    "testEnvironment": "node"
   },
   "devDependencies": {
     "@types/jest": "^23.3.11",
     "@types/node": "^10.12.18",
     "chai": "^4.2.0",
     "jest": "^23.6.0",
+    "jest-coverage-badges": "^1.1.2",
     "npm-run-all": "^4.1.5",
     "tslint": "^5.12.0",
     "typescript": "^3.2.2"

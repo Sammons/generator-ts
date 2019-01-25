@@ -1,13 +1,19 @@
-module.exports = (/*wallaby*/) => {
+module.exports = (wallaby) => {
   return {
-    "files": [
-      "code/src/**/*.ts*",
+    files: [
+      { pattern: '**/*.ts' },
+      { pattern: 'test/**/*.test.ts', ignore: true }
     ],
-    "tests": [
-      "code/test/**/*.test.ts*"
+    tests: [
+      { pattern: '**/*.test.ts' }
     ],
-    "env": {
-      "type": "node"
-    }
+    testFramework: "jest",
+    env: {
+      type: "node",
+      runner: "node",
+    },
+    // setup: (wallaby) => {
+    //   wallaby.testFramework.configure()
+    // }
   }
 }

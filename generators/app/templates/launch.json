@@ -11,7 +11,7 @@
       "internalConsoleOptions": "openOnSessionStart",
       "preLaunchTask": "npm: build",
       "outFiles": [
-        "${workspaceFolder}/out/**/*.js"
+        "${workspaceFolder}/built/**/*.js"
       ],
       "sourceMapPathOverrides": {
         "./*": "${workspaceRoot}/*"

@@ -56,8 +56,8 @@ module.exports = class LibraryGenerator extends Generator {
             'settings.json'
         ];
         copyToDirectory(this, `${this.props.libname}/.vscode`, vsCode);
-        copyToDirectory(this, `${this.props.libname}/code/src`, ['root.tts']);
-        copyToDirectory(this, `${this.props.libname}/code/test`, ['root.test.tts']);
+        copyToDirectory(this, `${this.props.libname}/src`, ['root.tts']);
+        copyToDirectory(this, `${this.props.libname}/test`, ['root.test.tts']);
     }
     install() {
         const dest = this.props.libname;

@@ -1,3 +1,5 @@
 # <%= pascalname %>
 
 ## <%= libdesc %>
+
+LICENSE: MIT
